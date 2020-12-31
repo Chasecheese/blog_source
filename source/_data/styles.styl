@@ -1,31 +1,129 @@
-
-
-/* header-隐藏顶部线条 */
-// .headband {
-//   display: none;
-// }
+/************************* Header **************************/
 
 /* header-顶部空白 */
-.header {
+.header, .main-inner {
   margin-top: 10px;
-	$border-radius = 5px;
-  +mobile() {
-    margin-top: 0;
+}
+
+
+.sidebar {
+  background: #000000;
+}
+
+body 
+{
+    background: #000000;
+}
+
+/************************ Sidebar **************************/
+
+/* sidebar-标题 */
+.site-title {
+  font-weight: bold;
+}
+
+/* sidebar-副标题 */
+.site-subtitle {
+  font-weight: bold;
+  font-family: $font-family-quote;
+  font-size: 0.8em;
+}
+
+.site-brand-container {
+  background: url(/images/title_bg.png);
+  background-position: 70% 20%;
+  background-size: cover;
+}
+
+/************************** Post ***************************/
+
+/* post-文章标题 */
+.posts-expand .post-title {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+/* post-文章信息 */
+.posts-expand .post-header {
+  margin-bottom: 30px;
+}
+
+/* post-段后距 */
+p {
+  margin-bottom: 40px;
+}
+
+/* post-正文字号 */
+.post-body {
+  font-size: 1em;
+}
+
+/* post-标签选择卡片加粗 */
+.post-body .tabs ul.nav-tabs li.tab a {
+  font-weight: bold;
+}
+
+/* post-图片标题 */
+.post-body .image-caption {
+  margin: 0 auto 15px;
+}
+
+/* post-图片阴影 */
+.posts-expand .post-body img {
+  box-shadow: $image-box-shadow;
+}
+
+/* post-引用与 note 字体 */
+blockquote p,
+.post-body .note {
+  font-family: $font-family-quote;
+}
+
+/* post-行内代码 */
+code {
+  font-size: .85em;
+  background: none;
+  color: var(--text-color);
+}
+
+/* post-思源宋体列表打叉修复 */
+li {
+  text-align: left;
+}
+
+/****************** Pagination & Footer ********************/
+
+/* pagination-删去页码框 */
+.pagination {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* pagination-页码按钮 */
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border: none;
+  border-radius: 1em;
+
+  &:hover {
+    color: white;
+    background: $btn-default-hover-bg;
+    btn-shadow-hover-only();
   }
 }
 
-// .site-brand-container {
-//   background: url(/images/title_background.jpg);
-//   background-position: 70% 20%;
-//   background-size: cover;
-// }
+/* pagination-当前页码 */
+.pagination .page-number.current {
+  background: $btn-default-bg;
+  btn-shadow-only();
+}
 
-// //由于本版本存在边框不统一，因此设置
-// .sidebar {
-//   background: #666666;
-// }
+/* footer */
+.footer {
+  margin: 20px 0 15px 0;
+  color: var(--blockquote-color);
+}
 
-// body 
-// {
-//     background: #666666;
-// }
+/************************ Overview *************************/

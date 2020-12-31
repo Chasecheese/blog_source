@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Mingxin's Blog
+subtitle: 'Stay Hungry, Stay Foolish.'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: 李明鑫
+language: mx
 timezone: ''
 
 # URL
@@ -103,4 +103,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/Chasecheese/Chasecheese.github.io
+  branch: master
